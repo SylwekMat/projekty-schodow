@@ -9,9 +9,9 @@
   --color-white: #fff;
   --adSection-background-color: #1e2630;
   --adSection-background-color-hover: #2f3c4b;
-  --icons-color: rgba(217, 217, 218, 0.8);
-  --icons-color-hover: rgb(138, 138, 138);
-  --contact-color: rgb(101, 101, 101);
+  --icons-color: rgba(118, 118, 118, 0.8);
+  --icons-color-hover: rgba(66, 66, 66, 0.947);
+  --contact-color: rgb(138, 138, 138);
   --container-background-color: #efeff0;
 }
 
@@ -366,11 +366,157 @@ OFFER
   line-height: 30px;
 }
 
+.offer-header {
+  font-size: 18px;
+}
+
+/* ----------------------------------------------------------------------------------
+INSTRUCTION
+---------------------------------------------------------------------------------- */
+
+.instruction-container {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.step {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.step-image {
+  width: 40%;
+  height: 100%;
+}
+
+.step-image img {
+  width: 80%;
+  height: auto;
+}
+
+.step-description {
+  width: 60%;
+  height: 100%;
+  padding-right: 20px;
+}
+
+.step-number {
+  text-transform: uppercase;
+  color: var(--header-link-color-icon);
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: -12px;
+}
+
+.step-header {
+  font-size: 19px;
+}
+
+@media (max-width: 500px) {
+  .step {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step-description {
+    width: 100%;
+    order: 1;
+  }
+  .step-image {
+    width: 100%;
+    order: 2;
+    margin-top: 20px;
+  }
+  .step-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ----------------------------------------------------------------------------------
+PRICES
+---------------------------------------------------------------------------------- */
+.prices-section {
+  background-color: var(--container-background-color);
+}
+
+.prices-container {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.prices-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.prices-table thead tr {
+  background-color: var(--adSection-background-color);
+  color: #ffffff;
+  text-align: left;
+}
+
+.prices-table th,
+.prices-table td {
+  padding: 12px 15px;
+}
+
+.prices-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.prices-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.prices-table tbody tr:last-of-type {
+  border-bottom: 2px solid var(--adSection-background-color);
+}
+
+/* ----------------------------------------------------------------------------------
+EXAMPLES
+---------------------------------------------------------------------------------- */
+.examples-section {
+  background-color: var(--adSection-background-color);
+  color: var(--color-white);
+}
+
+.examples-container {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 30px 0;
+}
+
 /* ----------------------------------------------------------------------------------
 CONTACT
 ---------------------------------------------------------------------------------- */
 
 .contact-section {
+  background-color: var(--container-background-color);
   padding-top: 40px;
   font-family: var(--main-font-family);
   width: 100%;
@@ -423,7 +569,7 @@ CONTACT
 }
 
 .contact-content {
-  color: var(--contact-color);
+  color: var(--icons-color-hover);
 }
 
 .contact-icon {
@@ -435,7 +581,7 @@ CONTACT
 }
 
 .phone-icon {
-  mask-image: url(../fontawesome/svgs/solid/phone-slash.svg);
+  mask-image: url(../fontawesome/svgs/solid/phone-volume.svg);
   -webkit-mask-image: url(../fontawesome/svgs/solid/phone-volume.svg);
 }
 
@@ -494,6 +640,10 @@ CONTACT
     display: block;
   }
 }
+
+/* ----------------------------------------------------------------------------------
+FOOTER
+---------------------------------------------------------------------------------- */
 
 footer {
   display: flex;
