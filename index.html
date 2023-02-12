@@ -16,7 +16,9 @@
     />
 
     <script type="module" src="src/scripts/main.js" defer></script>
+    <script type="text/javascript" src="src/scripts/lightbox.js" defer></script>
     <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="stylesheet" href="src/styles/lightbox.css" />
     <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32" />
     <link
       rel="preload"
@@ -275,9 +277,9 @@
           </tbody>
         </table>
         <p>
-          <b>Uwaga!</b> Każda konstrukcja jest płatna. Przy zmianie wersji schodów
-          wynikającej z zmiany wymiarów również! Bez dopłaty są drobne zmiany
-          (zmień i drukuj)
+          <b>Uwaga!</b> Każda konstrukcja jest płatna. Przy zmianie wersji
+          schodów wynikającej z zmiany wymiarów również! Bez dopłaty są drobne
+          zmiany (zmień i drukuj)
         </p>
         <br />
         <p>
@@ -293,6 +295,26 @@
     <section id="examples" class="examples-section">
       <div class="examples-container container">
         <h2>Przykłady</h2>
+        <p class="examples-header">Przyładowe realizacje:</p>
+        <div class="lightbox">
+          <div class="column">
+            <img src="images/examples/1.webp" alt="image1" />
+          </div>
+          <div class="column">
+            <img src="images/examples/2.webp" alt="image2" />
+          </div>
+          <div class="column">
+            <img src="images/examples/3.webp" alt="image3" />
+          </div>
+        </div>
+        <a href="/galeria.html" class="informations-container__check-offer show-more">
+          Zobacz więcej
+        </a>
+        <div class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+          <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        </div>
       </div>
     </section>
 

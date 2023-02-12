@@ -511,6 +511,14 @@ EXAMPLES
   padding: 30px 0;
 }
 
+.examples-header {
+  padding-left: 30px;
+}
+
+.show-more {
+  margin:auto;
+}
+
 /* ----------------------------------------------------------------------------------
 CONTACT
 ---------------------------------------------------------------------------------- */
@@ -649,7 +657,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 80px;
   background-color: var(--adSection-background-color);
   color: var(--color-white);
 }
