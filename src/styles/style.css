@@ -459,7 +459,7 @@ PRICES
   align-items: center;
   align-content: center;
   justify-content: center;
-  padding: 30px 0;
+  padding: 30px 30px;
 }
 
 .prices-table {
