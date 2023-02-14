@@ -27,7 +27,7 @@ h2 {
   border-radius: 2%;
   width: 23%;
   cursor: pointer;
-  margin:10px;
+  margin: 10px;
 }
 
 .gallery-box img:hover {
@@ -35,11 +35,32 @@ h2 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.video-container {
+  margin-top: 60px;
+}
+
+.video-content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.video-content video{
+  width: 48%;
+  margin: 30px 0;
+}
+
 @media (max-width: 500px) {
   .gallery-box img {
     width: 100%;
     max-width: 100%;
-    margin:0;
+    margin: 0;
     margin-bottom: 20px;
+  }
+
+  .video-content video{
+    width: 100%;
+    margin: 30px 0;
   }
 }
