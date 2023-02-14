@@ -1,20 +1,23 @@
 .lightbox-styles {
   display: flex;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
   padding: 30px 30px;
+  margin-top: -60px;
 }
 
 .column {
   width: 30%;
   padding: 0 12px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .column img {
   width: 100%;
-  height: 95%;
+  height: 80%;
   cursor: pointer;
   transition: 0.3s;
 }
