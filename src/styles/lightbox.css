@@ -1,4 +1,4 @@
-.lightbox {
+.lightbox-styles {
   display: flex;
   display: flex;
   justify-content: center;
@@ -21,6 +21,7 @@
 
 .column img:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0.8;
 }
 
 /* The Modal (background) */
