@@ -489,6 +489,10 @@ PRICES
   background-color: #f3f3f3;
 }
 
+.prices-table tbody tr:nth-of-type(odd) {
+  background-color: var(--color-white);
+}
+
 .prices-table tbody tr:last-of-type {
   border-bottom: 2px solid var(--adSection-background-color);
 }
