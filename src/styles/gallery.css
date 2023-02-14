@@ -26,9 +26,9 @@ h2 {
 .gallery-box img {
   box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
   border-radius: 2%;
-  width: 30%;
+  width: 23%;
   cursor: pointer;
-  margin:15px;
+  margin:10px;
 }
 
 .gallery-box img:hover {
