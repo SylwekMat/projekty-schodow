@@ -324,6 +324,7 @@ ADVERTISMENT
   font-size: 20px;
   font-weight: 400;
   line-height: 1.4em;
+  justify-content: center;
 }
 
 .advertisment-column:hover {
