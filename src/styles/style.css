@@ -191,6 +191,48 @@ nav ul li a:hover:before {
 }
 
 /* ----------------------------------------------------------------------------------
+LINKS
+---------------------------------------------------------------------------------- */
+.links-section {
+  width: 100%;
+  background-color: var(--adSection-background-color);
+  margin-top: 90px;
+  justify-content: center;
+  display: flex;
+  font-size: 16px;
+}
+
+.links-container {
+  display: flex;
+  align-items: center;
+}
+
+.links-list {
+  display: flex;
+}
+
+.links-list a {
+  margin: 11px 30px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+}
+
+.links-list a:hover {
+  color: #f57015;
+}
+
+.links-container .active {
+  color: #f57015;
+}
+
+@media (max-width: 900px) {
+  .links-section {
+    display: none;
+  }
+}
+
+/* ----------------------------------------------------------------------------------
 HOME
 ---------------------------------------------------------------------------------- */
 
@@ -521,7 +563,7 @@ EXAMPLES
 }
 
 .show-more {
-  margin:auto;
+  margin: auto;
 }
 
 /* ----------------------------------------------------------------------------------
