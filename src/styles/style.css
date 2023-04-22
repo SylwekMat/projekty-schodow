@@ -687,6 +687,15 @@ CONTACT
   -webkit-mask-image: url(../fontawesome/svgs/brands/instagram-square.svg);
 }
 
+.contact-map {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.contact-map iframe{
+  width: 100%;
+}
+
 @media (max-width: 500px) {
   .contact-column {
     width: 100%;
